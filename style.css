@@ -1,0 +1,403 @@
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+.header{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    
+    
+}
+
+.nav1{
+    margin-top: 0;
+    padding-top: 0;
+    
+    
+}
+.nav1 ul{
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 890px;
+    
+   
+    
+}
+.nav1 li{
+    cursor: pointer;
+}
+.search{
+position: relative;
+top: 0;
+}
+.search input{
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    font-size: 15px;
+    padding-left: 2px;
+}
+.search button{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background-color: white;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.nav2{
+    
+    background-color: black;
+
+}
+.im1{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.menu ul{
+    margin-left: 200px;
+    padding-left: 200px;
+}
+.menu p{
+    font-size: 15px;
+}
+.menu li{
+    font-size: 15px;
+    color: white;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.r1{
+    
+    background-image: url(./matt-about-middle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    height: 700px;
+    align-items: center;
+}
+
+
+.center-content{
+    filter: brightness(100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    
+}
+.center-content h2{
+    filter: brightness(100%);
+    margin-top: 70px;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+}
+.center-content h4{
+    align-content: center;
+    font-family: "Oswald", sans-serif;
+}
+.center-content form{
+    color: rgb(8, 2, 2);
+}
+.center-content input{
+    
+    padding-left: 120px;
+    padding-right: 100px;
+}
+.center-content p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+#pop{
+    cursor: pointer;
+}
+#pop:hover{
+    color: #3def63;
+}
+.r2{
+    background-color: rgb(34, 130, 208);
+}
+.col-2{
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.c1{
+    color: white;
+    font-size: 18px;
+}
+.c2 input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.c3 input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.b1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 181, 31);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.b1:hover{
+    background-color: rgb(14, 97, 21);
+    color: beige;
+}
+
+.container div{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Oswald", sans-serif;
+}
+.div img{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.c6{
+    position: relative;
+}
+.c6 img{
+    filter: brightness(70%);
+}
+.c6 h3{
+    position: absolute;
+    top 0;
+    padding-top: 70px;
+    color: white;
+}
+.c6 img:hover{
+    cursor: pointer;
+    filter: brightness(30%);
+    /* color: rgb(36, 56, 57); */
+}
+.h3:hover{
+ filter: brightness(100%);
+ cursor: pointer;
+}
+.con2{
+    margin-top: 80px;
+    background-color: rgb(239, 243, 234);
+    height:860px;
+
+}
+.col-6 h1{
+    font-family: "Oswald", sans-serif;
+}
+.col-6 h4{
+    font-family: "Oswald", sans-serif;
+}
+.col-6{
+    padding-left: 170px;
+    padding-top: 60px;
+}
+.col-6 p{
+    font-size: 20px;
+}
+.col-6 li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(61, 61, 202);
+    
+}
+.col-6 li a:hover{
+    color: black;
+}
+.col-6 a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(61, 61, 202);
+
+}
+.col-6 a:hover{
+    color:rgb(145, 145, 203); ;
+}
+.con3{
+    height: 700px;
+}
+.col-8{
+    display: flex;
+    flex-direction: column;
+}
+.rcon3 img{
+    padding-left: 60px;
+    padding-top: 50px;
+}
+.c7{
+    padding-left: 0;
+}
+.decorative-line {
+    display: flex;
+    align-items: center;
+    
+}
+.decorative-line::before,
+.decorative-line::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px dashed #797a96;
+    width: 200px;
+    
+}
+.decorative-line::before {
+    margin-right: 10px;
+}
+.decorative-line::after {
+    margin-left: 10px; 
+}
+.decorative-line i {
+    font-size: 50px;
+    
+}  
+.b2{
+    background-color:rgb(32, 134, 134);
+    color: white;
+}
+.b2:hover{
+    background-color: rgb(20, 59, 59) ;
+    color: white;
+
+    
+}
+.c7 h2{
+    font-family: "Oswald", sans-serif;
+}
+.c8{
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.c9{
+    padding-top: 30px;
+}
+
+    
+.c8 p{
+    font-size: 20px;
+}
+.c8 a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(61, 61, 202);
+}
+.c8 a:hover{
+    color:rgb(145, 145, 203); ;
+}
+.c{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+p{
+    font-size: 20px;
+}
+.con4{
+    margin-top: 80px;
+    background-color: rgb(239, 243, 234);
+    height:500px;
+}
+.con4 input{
+    padding-right: 300px;
+}
+.book {
+    
+
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+.b3{
+ background-color: rgb(125, 189, 30);
+ padding-right: 200px;
+ padding-left: 180px;
+}
+.b3:hover{
+    background-color:  rgb(59, 89, 14);
+    color: white;
+    box-shadow: 2px 2px 6px black;
+}
+.c11{
+    padding-top: 70px;
+    padding-left: 50px;
+}
+.c12{
+    padding-top: 70px;
+    padding-left: 100px;
+}
+.c12 input{
+    padding-bottom: 10px;
+}
+.con5{
+    background-color:rgb(32, 134, 134) ;
+    height: 300px;
+    margin: 0;
+}
+.c13{
+    padding-top: 40px;
+    color: white;
+}
+.c13 li{
+    font-size: 17px;
+}
+.c13 h5{
+    style="font-family: Oswald, sans-serif;"
+}
+
+
+#arrow-icon {
+    right: 20px;
+    z-index: 1;
+    
+  }
+  
+  .arrow-icon {
+    
+    width: 200px; 
+    height: 150px;
+    
+  }
+  #arrow-icon i {
+    font-size: 3rem; /* Adjust the size as needed */
+    color: #09238a;  /* Keep the color styling */
+}
+.dropdown-menu{
+    width: 300px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Remove the margin so the dropdown is aligned properly */
+    
+}
+.dropdown-menu h5{
+    color: black;
+}
+.dropdown-menu p:hover{
+    background-color: #bebec0;
+}
+.c13 input{
+    padding-top: 10px;
+     padding-bottom: 10px; 
+     padding-right: 100px;
+}
+

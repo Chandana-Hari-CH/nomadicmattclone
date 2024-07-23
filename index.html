@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomadic Matt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/png;base64,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">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header style="background-color: black;" class="navbar navbar-expand-lg" >
+        <div style="padding-left: 10px;" class="nav1 d-flex">
+            <ul class="d-flex mx-auto" type="none">
+                <li class="me-3"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></li>
+                <li class="me-3"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></li>
+                <li class="me-3"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></li>
+                <li class="me-3"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></li>
+            </ul>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="search" >
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #15274c;"></i>
+                        </button>
+                    </form>
+                </div>          
+            <br>
+        </div>   
+    </header>
+    <div class="nav2 mx-0 d-flex ">
+        <div class="im1">
+            <img width="200px" src="https://www.nomadicmatt.com/wp-content/uploads/2017/06/nomadic_matt_logo.png" alt="logo">
+        </div>
+    
+    <div class="menu d-flex">
+        <ul type="none" class="d-flex">
+            <li>ABOUT</li>
+            <li> 
+                <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                            BLOG
+                        </a>
+                        <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuLink">
+                            <h5 class="dropdown-header">LATEST POSTS</h5>
+                            <p>WHAT PLAYING POKER IN AMSTERDAM TAUGHT ME ABOUT MAKING FRIENDS</p>
+                            <p>THE 5 BEST HOTEL IN MEDDELLIN</p>
+                            <p>TRAVELING WITH FRIENDS: HOW TO AVOID DISASTER</p>
+                            <h5 class="dropdown-header">POPULAR POSTS</h5>
+                            <p>EVERYONE SAYS I'M RUNNING AWAY</p>
+                            <p>THE ULTIMATE WAY TO TRAVELING CHEAP</p>
+                            <p>TRAVEL IS A PRIVILEGE</p>
+                        </div>
+                    
+                  </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                        BLOG
+                    </a>
+                    <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuLink">
+                        
+                        <p>GET INSPIRED</p>
+                        <p>HOW TO SAVE FOR A TRIP</p>
+                        <p>HOW TO PLAN YOU TRIP</p>
+                        
+                        <p>GET THE RIGHT GEAR</p>
+                        <p>LIFE ON THE ROAD</p>
+                        <p>SOLO FEMALE TRAVEL</p>
+                    </div>
+                  </div>
+            </li>
+            
+            <li>DESTINATIONS</li>
+            <li>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                        BLOG
+                    </a>
+                    <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuLink">
+                        <P>FAVORITE TRAVEL COMPANIES</P>
+                        <P>BOOK ACCOMMODATION</P>
+                        <P>BOOK YOUR FLIGHT</P>
+                        <P>GET TRAVEL INSURANCE</P>
+                        <P>TRAVEL CREDIT CARDS</P>
+                        <P>MY FAVORITE HOSTELS</P>
+                    </div>
+                  </div>
+            </li>
+            <li>BOOKS</li>
+            <li>COURSES</li>
+        </ul>
+    </div>
+</div>
+<div id="arrow-icon" class="fixed-bottom d-flex justify-content-end p-3">
+    <a href="#">
+        <i height="100px" width="150px" class="fa-solid fa-arrow-up fa-beat" ></i>
+    </a>
+  </div>
+
+    <div class="row r1">
+        <div class="col-6 p-5 m-5 center-content">
+            <h2>Travel Smarter,Cheaper longer</h2>
+            <h4>Where do you want to go?</h4>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Find your destination">
+            </form>
+            <p><strong>Popular searches:</strong> <span id="pop">Southeast Asia</span>,<span id="pop">Europe</span>,<span id="pop">travel hacking</span>,<span id="pop">insurance</span>, <span id="pop">Paris</span></p>
+        </div>
+        <div class="col-6"></div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-2"></div>
+        <div style="font-family: Oswald, sans-serif;" class="col-2 c1">GET MY BEST TIPS SENT STRAIGHT TO YOU!</div>
+        <div class="col-2 c2">
+            <form action="">
+                <input class="text-center" type="text" name="" id="" placeholder="FIRST NAME">
+            </form>
+        </div>
+        <div class="col-2 c3">
+            <form action="">
+                <input class="text-center" type="email" name="" id="" placeholder="EMAIL">
+            </form>
+        </div>
+        <div class="col-2 c4">
+            <button class="btn b1 border-radius-2">SEND ME TIPS</button>
+        </div>
+        <div class="col-2 c5"></div>
+    </div>
+    <h1 style="font-family: Oswald, sans-serif;" class="text-center p-3 m-3">Start Planning Your Trip</h1>
+    <div class="container">
+        <div class="div d1 px-5">
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/get-inspired.jpg" alt="">
+            <h3>Getting inspired</h3>
+            </div>
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/save-for-a-trip.jpg" alt="">
+                <h3>How To Save For A Trip</h3></div>
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/plan-your-trip.jpg" alt="">
+                <h3>How To Plan Your Trip</h3></div>
+        </div>
+        <div class="div d2 px-5">
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/the-right-gear.jpg" alt="">
+                <h3>Getting The Right Gear</h3></div>
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/cheap-airfare.jpg" alt="">
+                <h3>Finding Cheap Airfare</h3></div>
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/plan-your-trip.jpg" alt="">
+                <h3>Finding Accommodation</h3></div>
+        </div>
+        <div class="div d3 px-5">
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/on-the-road.jpg" alt="">
+                <h3>Life On The Road </h3></div>
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/solo-remale.jpg" alt="">
+                <h3>Solo Female Travel</h3></div>
+            <div class="col-4 c6"><img height="200px" width="400px" src="https://www.nomadicmatt.com/wp-content/uploads/2024/05/family-and-senior.jpg" alt="">
+                <h3>Family And Senior Travel</h3></div>
+        </div>
+    </div>
+
+    <div class="container-fluid con2">
+
+        <div class="row rcon">
+            <div class="col-6">
+                <h1>Hello! I’m Nomadic Matt!</h1>
+                <img class="pt-2" height="300px" width="90%" src="https://media.nomadicmatt.com/siteimages/matt-home.jpg" alt="">
+                <p class="text-justify">Welcome! Every day I wake up with one goal in mind: “How can I help other people travel better for less?” My mission is to help travelers like you realize their travel dreams!
+                   <br><br>
+                    Since 2008, I’ve helped millions of people save money, travel more, and have a more authentic experience in the destinations they visit.     
+                    <br><br>
+                    This website has been featured in major media time and time again because it’s got the best budget advice out there. My goal is to make you a smarter traveler so you can go where you want as often as you want.</p>
+            <a href="#"><strong>Learn more about my story >>></strong></a>
+                </div>
+            <div class="col-6">
+                <h1>Top Articles</h1>
+                <ul class="pt-2 pb-3">
+                    <li>
+                        <a href="#">How to find cheap flights</a>
+                    </li>
+                    <li>
+                        <a href="#">How to find cheap flights</a>
+                    </li>
+                    <li>
+                        <a href="#">How to find cheap flights</a>
+                    </li>
+                    <li>
+                        <a href="#">How to find cheap Accommodation</a>
+                    </li>
+                    <li>
+                        <a href="#">How to choose a backpack</a>
+                    </li>
+                    <li>
+                        <a href="#">17 steps for planning a trip</a>
+                    </li>
+                    <li>
+                        <a href="#">My ultimate packing guide</a>
+                    </li>
+                    <li>
+                        <a href="#">How to buy travel insurance</a>
+                    </li>
+                    <li>
+                        <a href="#">11 tips for new travelers</a>
+                    </li>
+                    <li>
+                        <a href="#">My favorite hostels</a>
+                    </li>
+                    <li>
+                        <a href="#">Solo female travel tips</a>
+                    </li>
+                    <li>
+                        <a href="#">14 Travel scams to avoid</a>
+                    </li>
+                    
+                </ul>
+                <h4>My Advice Has Been Featured In:</h4>
+                <img height="300px" width="400px" src="https://media.nomadicmatt.com/siteimages/Featured%20Graphic-Seen-In.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="div c">
+
+        <div class="row rcon3 d-flex">
+            <div class="col-4"><img height="300px" width="300px" src="https://media.nomadicmatt.com/siteimages/home-travel-resources.jpeg" alt=""></div>
+            <div class="col-6 c7">
+                <h2>Top Resources</h2>
+                <p>Over the last 17 years, I’ve used hundreds of companies during my travels. Some have been great, some have been awful. To help you plan your  trip, here’s my list of the best travel companies. They are where all my travel planning and booking starts. Use them to book your trips too!</p>
+                <button class="btn b2 ">CHECK THEM OUT</button>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <div class="decorative-line">
+            <i class="fa-solid fa-earth-asia" style="color: #9fb2d6;"></i>
+        </div>
+        <h1 style="font-family: Oswald, sans-serif;" class="text-center pt-5">Books & Guides</h1>
+        <div class="row rcon3 d-flex">
+            <div class="col-8 c8">
+                <h2 style="font-family: Oswald, sans-serif;">Ten Years a Nomad: A traveler's Journey Home!</h2>
+                <p>The book is a memoir of my ten years backpacking the world and the lessons I learned along the way. It follows the arc of a trip around globe: getting the bug, the planning, setting off, the highs, the lows, the friendships made, the relationships forged (and lost), and the emotions you feel when it’s all over.
+                    <br><br>
+                    Unlike my previous books, this is not a “how to” guide but a collection of insights, advice, and stories from the road meant to convey the experience of what it’s like to quit your job, follow the road not taken, and travel the world trying to discover who you are and what the world has to offer. It is my opus on travel meant to inspire you to pursue your own travel dreams.</p>
+                <a class="pb-4" href="#"><strong>Find out more and pick up a copy today!</strong></a>
+                
+            </div>
+            <div class="col-4 c9 px-5"><img height="400px" width="300px" src="https://media.nomadicmatt.com/siteimages/Cover-Ten-Years-A-Nomad.jpg" alt=""></div>
+            <div class="decorative-line">
+                <i class="fa-solid fa-earth-asia" style="color: #9fb2d6;"></i>
+            </div>
+        </div>
+        <h2 style="font-family: Oswald, sans-serif;" class="text-center pt-5">Destination Guidebooks</h2>
+        <p class="text-justify pt-3 px-5">I’ve written a few destination guidebooks that will help you travel cheaper, better, and smarter. Unlike other guidebooks, these are specifically written for budget travelers! They contain detailed tips, advice, and insider information so you can get off the beaten path, away from the crowds, and save money when you travel. Straight to the point, no fluff.</p>
+        <div class="container cc">
+            <div class="row book d-flex">
+                <div class="col-2"><img height="200px" width="150px" src="https://media.nomadicmatt.com/bookimages/ultimate_points_miles_cover_small.jpg" alt=""></div>
+                <div class="col-2"><img height="200px" width="150px" src="https://media.nomadicmatt.com/GuideBookCovers/NM_Guide_to_Paris_Flat.jpg" alt=""></div>
+                <div class="col-2"><img height="200px" width="150px" src="https://media.nomadicmatt.com/GuideBookCovers/NM_Guide_to_NYC_Flat.jpg" alt=""></div>
+                <div class="col-2"><img height="200px" width="150px" src="https://media.nomadicmatt.com/siteimages/home/NM_Guide_to_Iceland_Flat.jpg" alt=""></div>
+                <div class="col-2"><img height="200px" width="150px" src="https://media.nomadicmatt.com/GuideBookCovers/NM_Guide_to_Thailand_Flat.jpg" alt=""></div>
+                <div class="col-2"><img height="200px" width="150px" src="https://media.nomadicmatt.com/GuideBookCovers/NM_Guide_to_Europe_Flat.jpg" alt=""></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container-fluid con4">
+        <div class="row rcon4 d-flex">
+            <div class="col-5 c12">
+                <h3 style="font-family: Oswald, sans-serif;">GET YOUR  FREE TRAVEL STARTER KIT</h3>
+                <p>Enter your email and get planning cheatsheets including a step by step checklist, packing list, tips cheat sheet, and more so you can plan like a pro!
+
+                </p>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="First Name"><br><br>
+                    <input type="email" name="" id="" placeholder="Email Address">
+                </form><br>
+                <button class="btn b3">SEND ME TIPS!</button>
+            </div>
+            <div class="col-7 c11">
+                <img style="cursor: pointer;" class="" height="400px" width="600px" src="https://media.nomadicmatt.com/siteimages/Book_Covers.png" alt="">
+            </div>
+        </div>
+
+    </div>
+        
+    <div height="300px" class="container-fluid con5 con-info">
+        <div class="row con5">
+            <div class="col-1"></div>
+            <div class="col-2 c13">
+                <h5 >ABOUT US</h5><hr>
+                <ul type="none">
+                    <li>About Matt</li>
+                    <li>Contact Us</li>
+                    <li>Copyright</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+            <div class="col-2 c13">
+                <h5>TRAVEL TIPS</h5><hr>
+                <ul type="none">
+                    <li>Start Here</li>
+                    <li>Travel Blog</li>
+                    <li>Destination Guide</li>
+                    <li>Favorite Hostels</li>
+                    <li>Favorite Hotels</li>
+                    <li>Favorite Neighborhoods</li>
+                    
+                </ul>
+            </div>
+            <div class="col-2 c13">
+                <h5>BOOK YOUR TRIP</h5><hr>
+                <ul type="none">
+                    <li>Get Accommodation</li>
+                    <li>Get Flight</li>
+                    <li>Get Travel insurance</li>
+                    <li>Get Credit Cards</li>
+                    <li>My Favorite Companies</li>
+                   
+                    
+                </ul>
+            </div>
+            <div class="col-2 c13">
+                <h5>BOOKS AND COURSES</h5><hr>
+                <ul type="none">
+                    <li>Ten Years A Nomad</li>
+                    <li>Destination Guidebooks</li>
+                    <li>Blogging Mentorship</li>
+                    <li>Writting Mentorship</li>
+                    
+                </ul>
+            </div>
+            <div class="col-3 c13">
+                <h5 style="padding-top: 20px;">FOLLOW ME ON THE WEB</h5><hr>
+                <div class="f d-flex">
+                    <ul class="d-flex" type="none">
+                        <li style="cursor: pointer;" class="me-3"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></li>
+                        <li style="cursor: pointer;" class="me-3"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></li>
+                        <li style="cursor: pointer;" class="me-3"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></li>
+                        <li style="cursor: pointer;" class="me-3"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></li>
+                    </ul>
+                    </div>
+                <h5>SEARCH</h5><hr>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Search the site here">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+
+    
+</body>
+</html>
